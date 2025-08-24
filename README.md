@@ -1,3 +1,5 @@
+Don't forget to give me a follow and a star to this repo ⭐ 
+
 Copy the script below:
 
 ```zsh
