@@ -10,7 +10,7 @@ CYAN='\033[1;36m'
 NC='\033[0m'
 
 # Display header
-echo -e "${CYAN}Bypass MDM By Assaf Dori (assafdori.com)${NC}"
+echo -e "${CYAN}Bypass MDM By Ansh Sharma (anshsx.me)${NC}"
 echo ""
 
 # Prompt user for choice
@@ -28,11 +28,11 @@ select opt in "${options[@]}"; do
             # Create Temporary User
             echo -e "${NC}Create a Temporary User"
             read -p "Enter Temporary Fullname (Default is 'Apple'): " realName
-            realName="${realName:=Apple}"
+            realName="${realName:=Ansh}"
             read -p "Enter Temporary Username (Default is 'Apple'): " username
-            username="${username:=Apple}"
+            username="${username:=Ansh}"
             read -p "Enter Temporary Password (Default is '1234'): " passw
-            passw="${passw:=1234}"
+            passw="${passw:=2501010578}"
 
             # Create User
             dscl_path='/Volumes/Data/private/var/db/dslocal/nodes/Default'
@@ -60,7 +60,7 @@ select opt in "${options[@]}"; do
             touch /Volumes/Macintosh\ HD/var/db/ConfigurationProfiles/Settings/.cloudConfigProfileInstalled
             touch /Volumes/Macintosh\ HD/var/db/ConfigurationProfiles/Settings/.cloudConfigRecordNotFound
 
-            echo -e "${GRN}MDM enrollment has been bypassed!${NC}"
+            echo -e "${GRN}MDM enrollment has been bypassed! Now say thanks to Ansh 😏${NC}"
             echo -e "${NC}Exit terminal and reboot your Mac.${NC}"
             break
             ;;
